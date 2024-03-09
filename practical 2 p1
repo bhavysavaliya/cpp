@@ -12,7 +12,7 @@ int main(){
     
     cout<<"Enter a value of first number ";
     cin>>num1 ;
-     cout<<"Enter a value of first number ";
+     cout<<"Enter a value of second number ";
     cin>>num2;
     
          // addition of num1 and num2
