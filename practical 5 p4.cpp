@@ -1,49 +1,36 @@
-#include<iostream>
-#include<iomanip>
+#include <iostream>
 using namespace std;
-class Item{
-private:
+
+class data_information{
+double number;
 double cost;
-double quantity;
 
-double display ();
 public:
-
-void put_data(double c,double q){
-cost= c;
-quantity=q;
-} 
-
-
-double get_data(){
-return display();
-}
+     
+ void put_data(double q,double c){
+   number = q ;
+   cost = c ;
+ }
+ double get_data();
 };
 
-double Item::display(){
- cout << "the cost of item :" <<cost<< endl;
- cout << "the quantity of item :" <<quantity<< endl;
+double data_information::get_data(){
+   cout << "The number of product: " << number << endl ;
+   cout << "The value of cost : " << cost ;
+   return 0;
 }
 
-int main()
+
+int main() 
 {
- fixed;
-Item c1;
-double Cos,Qua;
-
-
-
-cout << "Enter the Cost" << endl;
-cin >> Cos;
-cout << "Enter the Quantity" << endl;
-cin >> Qua;
-
-
-
-
-c1.put_data(Cos,Qua);
-
-cout << "" <<c1.get_data ()<< endl;
-
-    return 0;
+double a,b;
+cout << "Enter the number of the product" << endl;
+cin >> a;
+cout << "Enter the cost of the product" << endl;
+cin >> b;
+   data_information d1;
+   d1.put_data(a,b);
+   d1.get_data();
+    
+   return 0;
 }
